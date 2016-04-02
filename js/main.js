@@ -41,15 +41,14 @@ $(function() {
 				4- shows the menu items;
 				5- initializes the menu items events
 			 */
-			 toggleLanding();
-			$landing.promise().done(function(){
-				$ac_loading.fadeOut();
-				burgerClick();
+			$ac_loading.show();//show loading status image
+			$.when(loadImages()).done(function(){
+				toggleLanding();
+				$landing.promise().done(function(){
+					$ac_loading.fadeOut();
+					burgerClick();
+				});
 			});
-			// $ac_loading.show();//show loading status image
-			// $.when(loadImages()).done(function(){
-				
-			// });
 		},
 
 		burgerClick = function(){
@@ -72,7 +71,7 @@ $(function() {
 		},
 
 		toggleLanding = function(){
-				$landing.addClass("magictime puffIn");
+				$landing.fadeIn(600);
 		},
 
 		showBGImage			= function() {
