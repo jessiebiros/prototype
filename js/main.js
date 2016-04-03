@@ -67,11 +67,11 @@ $(function() {
 		},
 
 		hideLanding = function(){
-			$landing.addClass("slideRight");
+			$landing.addClass("magictime slideRight");
 		},
 
 		toggleLanding = function(){
-				$landing.fadeIn(600);
+				$landing.fadeIn();
 		},
 
 		showBGImage			= function() {
