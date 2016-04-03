@@ -41,15 +41,30 @@ $(function() {
 				4- shows the menu items;
 				5- initializes the menu items events
 			 */
-			toggleLanding();
-			$landing.promise().done(function(){
-				$ac_loading.fadeOut();
-				burgerClick();
-			});
+			//toggleLanding();
+			// $landing.promise().done(function(){
+			// 	$ac_loading.fadeOut();
+			// 	burgerClick();
+			// });
 			// $ac_loading.show();//show loading status image
 			// $.when(loadImages()).done(function(){
 				
 			// });
+			$ac_loading.show();//show loading status image
+			loader();
+		},
+
+		loader = function(){
+			var $div = $landing,
+			  bg = $div.css('background-image');
+			  if (bg) {
+			    var src = bg.replace(/(^url\()|(\)$|[\"\'])/g, ''),
+			      $img = $('<img>').attr('src', src).on('load', function() {
+			        // do something, maybe:
+			        $ac_loading.hide();
+			        $div.fadeIn();
+			      });
+			  }
 		},
 
 		burgerClick = function(){
