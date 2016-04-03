@@ -63,6 +63,7 @@ $(function() {
 			        // do something, maybe:
 			        $ac_loading.hide();
 			        $div.fadeIn();
+					burgerClick();
 			      });
 			  }
 		},
