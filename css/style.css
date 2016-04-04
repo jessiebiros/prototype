@@ -341,6 +341,10 @@ span.ac_close:hover{
 }
 
 .kwicks li img{
+	height: 300px;
+}
+
+.kwicks.big-img li img{
 	height: 500px;
 }
 
@@ -357,17 +361,28 @@ span.ac_close:hover{
 	
 }
 
-.kwicks li:hover .caption, .kwicks .kwicks-expanded .caption{
+.kwicks li:hover .caption, .kwicks .kwicks-expanded .caption, .kwicks .kwicks-selected .caption{
 	margin-right: 20px !important;
 	-webkit-border-radius: 0 25px 25px 0;
 	border-radius: 0 25px 25px 0;
 }
 
-.kwicks li:hover .caption p, .kwicks .kwicks-expanded .caption p{
+.kwicks li:hover .caption p, .kwicks .kwicks-expanded .caption p, .kwicks .kwicks-selected .caption p {
 	max-height: 1000px !important;
 	opacity: 1 !important;
 	-webkit-border-radius: 0 25px 25px 0;
 	border-radius: 0 25px 25px 0;
+}
+
+.kwicks .kwicks-selected.kwicks-collapsed .caption{
+	-webkit-border-radius: 0 0 0 0; 
+	border-radius: 0 0 0 0; 
+	margin-right: 0 !important;
+}
+
+.kwicks .kwicks-selected.kwicks-collapsed .caption p{
+	max-height: 0 !important;
+	opacity: 0 !important;
 }
 
 .kwicks li .caption p{
