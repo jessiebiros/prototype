@@ -228,7 +228,7 @@ span.ac_close:hover{
 }
 .kwicks > li {
 	height: 100%;
-	padding-top: 7%;
+	padding-top: 3%;
 }
 
 .panel1{
@@ -341,11 +341,11 @@ span.ac_close:hover{
 }
 
 .kwicks li img{
-	height: 400px;
+	height: 60%;
 }
 
 .kwicks.big-img li img{
-	height: 500px;
+	height: 65%;
 }
 
 .kwicks li .caption{
