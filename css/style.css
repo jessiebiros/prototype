@@ -125,7 +125,7 @@ img.ac_bgimage{
 	overflow:hidden;
 	padding:5px 20px 5px 20%;
 }
-.ac_menu > ul > li a{
+.ac_menu > ul > li > a{
 	margin-top:60px;
 	opacity:0;
 	display:block;
@@ -143,7 +143,7 @@ img.ac_bgimage{
 	transition: background 0.3s ease;
 }
 
-.ac_menu > ul > li a:hover{
+.ac_menu > ul > li > a:hover{
 	background-color: #7b1351;
 }
 
